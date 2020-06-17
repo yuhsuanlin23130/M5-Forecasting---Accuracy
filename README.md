@@ -1,7 +1,7 @@
 
 Kaggle Competition: M5-Accuracy, M5-Uncertainty
 
-### M5-Accuracy (https://www.kaggle.com/c/m5-forecasting-accuracy)
+##### M5-Accuracy (https://www.kaggle.com/c/m5-forecasting-accuracy)
 預測Walmart各商品(30490 in total)未來28天之銷售量。
 Model: One to one LSTM。
 根據觀察，銷售量有週期性的變化，而LSTM擅長這種時間序列的處理，且比起RNN又多了input gate、forget gate、output gate三個gates強化學習效果，適合用於此銷售量的預測。
@@ -23,7 +23,7 @@ LSTM Model
 - learning rate=0.01
 
 
-###　M5-Uncertainty  (https://www.kaggle.com/c/m5-forecasting-uncertainty)
+##### M5-Uncertainty  (https://www.kaggle.com/c/m5-forecasting-uncertainty)
 預測Walmart各商品(30490 in total)未來28天之銷售量分布，即預測分布之percentile (u1=0.005, u2=0.025, u3=0.165, u4=0.25, u5=0.5, u6=0.75, u7=0.835, u8=0.975, and u9=0.995)。
 Repeat LSTM model 100 times for each item.  Use the item’s 100 results at day x as the distribution of that item at day x. 
 The file ./Uncertainty.ipynb get use of the 100 files resulted from the M5-Accuracy problem, compute the percentiles of each item and convert the results to the format that kaggle accepts.
