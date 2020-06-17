@@ -26,4 +26,4 @@ LSTM Model
 ##### M5-Uncertainty  (https://www.kaggle.com/c/m5-forecasting-uncertainty)
 預測Walmart各商品(30490 in total)未來28天之銷售量分布，即預測分布之percentile (u1=0.005, u2=0.025, u3=0.165, u4=0.25, u5=0.5, u6=0.75, u7=0.835, u8=0.975, and u9=0.995)。
 Repeat LSTM model 100 times for each item.  Use the item’s 100 results at day x as the distribution of that item at day x. 
-The file ./Uncertainty.ipynb get use of the 100 files resulted from the M5-Accuracy problem, compute the percentiles of each item and convert the results to the format that kaggle accepts.
+The file ./M5-Uncertainty/Uncertainty.ipynb get use of the 100 files resulted from the M5-Accuracy problem, compute the percentiles of each item and convert the results to the format that kaggle accepts.
